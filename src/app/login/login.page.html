@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="container" [formGroup]="formLogin">
+    <h1>Bem Vindo!</h1>
+    <img
+      class="mascara"
+      src="../../assets/icon/Grupo de máscara 2.png"
+      alt=""
+    />
+
+    <div class="form-image">
+      <img class="image" src="../../assets/icon/welcome.png" />
+    </div>
+    <div class="form">
+      <img src="../../assets/icon/ad.png" />
+      <input
+        type="text"
+        formControlName="email"
+        placeholder="E-mail"
+        required
+      />
+    </div>
+    <div class="form">
+      <img src="../../assets/icon/senha1.png" />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder=" Senha"
+        required
+      />
+    </div>
+    <div class="btn">
+      <button type="submit" [disabled]="!formLogin.valid">Login</button>
+    </div>
+  </div>
+</ion-content>
